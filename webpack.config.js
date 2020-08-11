@@ -26,6 +26,11 @@ module.exports = (env, argv) => ({
                 exclude: /node_modules/
             },
             {
+                test: /\.(js|jsx)$/,
+                use: 'react-hot-loader/webpack',
+                include: /node_modules/
+            },
+            {
                 test: /\.(png|jpe?g)/i,
                 use: 'file-loader'
             },
