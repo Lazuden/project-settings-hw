@@ -6,12 +6,10 @@ import logoSrc from './logo.png';
 
 const App = () => 
   <div className={style.message}>
-    
     <img className={style.logo} src={logoSrc} alt="Xsolla logo" />
-    
     <span className={style.title}>Xsolla</span>
     <br />
-    <input />
+    <input className={style.input}/>
   </div>
 
 export default hot(App);
